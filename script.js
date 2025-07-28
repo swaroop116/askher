@@ -46,6 +46,3 @@ function confetti() {
   });
 }
 
-  };
-  document.body.appendChild(script);
-}
