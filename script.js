@@ -4,7 +4,7 @@ let noBtn = document.getElementById('no-btn');
 let yesFontSize = 1.2; // starting size in rem
 
 noBtn.addEventListener('click', () => {
-  yesFontSize += 0.3;
+  yesFontSize += 1;
   yesBtn.style.fontSize = `${yesFontSize}rem`;
 });
 
