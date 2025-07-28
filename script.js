@@ -26,6 +26,14 @@ yesBtn.addEventListener('click', () => {
     createHeart();
   }
 });
+let noClickCount = 0;
+
+noBtn.addEventListener('click', () => {
+  noClickCount++;
+  if (noClickCount >= 1) {
+    noBtn.innerText = "😅 Seriously?";
+  }
+});
 
 // Floating heart generator
 function createHeart() {
