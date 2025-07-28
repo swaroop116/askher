@@ -1,12 +1,21 @@
 let yesBtn = document.getElementById('yes-btn');
 let noBtn = document.getElementById('no-btn');
 let yesFontSize = 1.2;
+let noClickCount = 0;
 
 noBtn.addEventListener('click', () => {
+  // Grow the yes button
   yesFontSize += 1;
   yesBtn.style.fontSize = `${yesFontSize}rem`;
   yesBtn.classList.add('grow');
   setTimeout(() => yesBtn.classList.remove('grow'), 400);
+
+  // Count no clicks
+  noClickCount++;
+  if (noClickCount >= 2) {
+    noBtn.innerText = "😅 Seriously?";
+    noBtn.disabled = true;
+  }
 });
 
 // Sound and confetti
@@ -26,14 +35,7 @@ yesBtn.addEventListener('click', () => {
     createHeart();
   }
 });
-let noClickCount = 0;
 
-noBtn.addEventListener('click', () => {
-  noClickCount++;
-  if (noClickCount >= 1) {
-    noBtn.innerText = "😅 Seriously?";
-  }
-});
 
 // Floating heart generator
 function createHeart() {
