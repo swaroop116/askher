@@ -1,0 +1,36 @@
+body {
+  background-color: #fffbe6;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#yes-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+#no-btn {
+  background-color: #f44336;
+  color: white;
+}
