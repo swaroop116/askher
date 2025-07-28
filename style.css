@@ -27,7 +27,8 @@ button {
 
 #yes-btn {
   background-color: #4caf50;
-  color: white;
+  color: white
+  transition: font-size 0.3s ease, transform 0.3s ease;
 }
 
 #no-btn {
